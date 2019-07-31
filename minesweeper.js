@@ -1,11 +1,23 @@
 document.addEventListener('DOMContentLoaded', startGame)
 
 // Define your `board` object here!
-// var board = 
+ var board = {
+   cells: [
+    {row: 0,col: 0},
+    {row: 0,col: 1},
+    {row: 0,col: 2},
+    {row: 1,col: 0},
+    {row: 1,col: 1},
+    {row: 1,col: 2},
+    {row: 2,col: 0},
+    {row: 2,col: 1},
+    {row: 2,col: 2}
+  ]}
 
+ 
 function startGame () {
   // Don't remove this function call: it makes the game work!
-  lib.initBoard()
+  lib.initBoard() 
 }
 
 // Define this function to look for a win condition:
@@ -16,7 +28,7 @@ function checkForWin () {
 
   // You can use this function call to declare a winner (once you've
   // detected that they've won, that is!)
-  //   lib.displayMessage('You win!')
+  lib.displayMessage('You win!')
 }
 
 // Define this function to count the number of mines around the cell
